@@ -11,9 +11,10 @@ RailWayX is a modern Railway Management System developed using PHP, MySQL, Tailw
 - User Registration & Login
 - Search Trains
 - Book Tickets
-- View Journey History
-- Manage Profile
-- View Payments
+- View Tickets
+- Journey History
+- Payment Section
+- User Profile Management
 - Responsive User Dashboard
 - Modern Railway-Themed UI
 
@@ -26,10 +27,9 @@ RailWayX is a modern Railway Management System developed using PHP, MySQL, Tailw
 - Manage Trains
 - Manage Stations
 - Manage Coaches
-- Manage Seats
 - Manage Reservations
 - Payment Monitoring
-- Reports & Analytics
+- Train Management
 - Responsive Admin Dashboard
 
 ---
@@ -38,12 +38,12 @@ RailWayX is a modern Railway Management System developed using PHP, MySQL, Tailw
 
 - Modern Tailwind CSS Design
 - Dark Futuristic Railway Theme
-- Responsive Layout
 - Glassmorphism Effects
+- Responsive Layout
 - Animated Sections
-- Collapsible Sidebar
 - Mobile-Friendly Dashboard
 - Railway Background Images
+- Collapsible Sidebar
 - Smooth Hover Animations
 
 ---
@@ -56,7 +56,7 @@ RailWayX is a modern Railway Management System developed using PHP, MySQL, Tailw
 | MySQL | Database |
 | Tailwind CSS | Styling |
 | JavaScript | Interactivity |
-| XAMPP | Local Server |
+| XAMPP | Local Development |
 
 ---
 
@@ -75,34 +75,51 @@ The project uses the following database tables:
 
 ---
 
-# 📂 Project Structure
+# 📂 Current Project Structure
 
 ```bash
-RailWayX/
+rail/
 │
 ├── admin/
-│   ├── admin_dashboard.php
-│   ├── admin_header.php
+│   ├── add_coach.php
+│   ├── add_station.php
+│   ├── add_train.php
 │   ├── admin_footer.php
-│   └── admin_logout.php
-│
-├── user/
-│   ├── user_dashboard.php
-│   └── user_logout.php
+│   ├── admin_header.php
+│   ├── admin_logout.php
+│   ├── dashboard.php
+│   ├── delete_station.php
+│   ├── delete_user.php
+│   ├── edit_coach.php
+│   ├── edit_station.php
+│   ├── edit_train.php
+│   ├── edit_user.php
+│   ├── manage_coaches.php
+│   ├── manage_payments.php
+│   ├── manage_reservations.php
+│   ├── manage_stations.php
+│   ├── manage_trains.php
+│   └── manage_users.php
 │
 ├── home/
+│   ├── authenticate.php
+│   ├── config.php
+│   ├── footer.php
 │   ├── header.php
-│   └── footer.php
+│   ├── index.php
+│   ├── login.php
+│   └── register.php
 │
-├── assets/
+├── user/
+│   ├── book_ticket.php
+│   ├── payment.php
+│   ├── payments.php
+│   ├── profile.php
+│   ├── register_process.php
+│   ├── search_trains.php
+│   ├── tickets.php
+│   ├── user_dashboard.php
+│   ├── user_header.php
+│   └── user_logout.php
 │
-├── database/
-│   └── railwayx.sql
-│
-├── index.php
-├── login.php
-├── register.php
-├── authenticate.php
-├── register_process.php
 └── README.md
-
